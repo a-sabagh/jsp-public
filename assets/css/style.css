@@ -1,0 +1,163 @@
+/* -------------------------------------------------
+ T Y P O G R A P H Y
+----------------------------------------------------*/
+@font-face {
+  font-family: Sahel;
+  src: url('fonts/Sahel.eot');
+  src: url('fonts/Sahel.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Sahel.woff') format('woff'),
+       url('fonts/Sahel.ttf') format('truetype');
+  font-weight: normal;
+}
+      
+@font-face {
+  font-family: Sahel;
+  src: url('fonts/Sahel-Bold.eot');
+  src: url('fonts/Sahel-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Sahel-Bold.woff') format('woff'),
+       url('fonts/Sahel-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url('fonts/Sahel-Black.eot');
+  src: url('fonts/Sahel-Black.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Sahel-Black.woff') format('woff'),
+       url('fonts/Sahel-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+*:not([class*='icon']):not(.fa):not(i) {
+    font-family: Sahel;
+    letter-spacing: normal !important;
+}
+
+body, div, span, h1, h2, h3, h4, h5, h6, p, a,section, mark,
+ol, ul, li, form, table, caption, tbody, tfoot, thead, tr, th, td, article,
+aside, details, figcaption, footer, header, hgroup, menu, nav, output,
+input[type="text"] , input[type="textarea"] , input[type="submit"] {
+    font-family: Sahel;
+    letter-spacing: normal !important;
+}
+a , span {
+    font-family: Sahel;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Sahel;
+    direction: rtl !important;
+    letter-spacing: normal !important;
+}
+
+p {
+    font-family: Sahel;
+    letter-spacing: normal !important;
+    direction: rtl !important;
+    line-height: 20px !important;
+}
+.fa , [class*='fa-'] {font-family: "FontAwesome" !important;}
+.ab-icon {font: 400 20px/1 "dashicons" !important;}
+.dashicons {font-family: "dashicons" !important;}
+.font-number{
+    display: inline-block;
+    direction: ltr;
+}
+body {
+	background-color: white;
+	color: #777777;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+/* -------------------------------------------------
+ H E A D E R
+----------------------------------------------------*/
+
+#header .top-bar{
+	background-color: #c3161c;
+	border-bottom: 1px solid #d24f54;
+	padding: 3px 0;
+}
+#header .top-bar .top-bar-nav {
+    float: left;
+}
+#header .top-bar .top-bar-nav ul li {
+	display: inline-block;
+	margin-right: 3px;
+	border-left: 1px solid #ccc;
+	vertical-align: middle;
+}
+#header .top-bar .top-bar-nav ul li:last-child {
+	margin-right: 0;
+	border-left: none;
+}
+#header .top-bar .top-bar-nav ul li  a{
+	padding: 1px 3px;
+	font-size: 11px;
+	line-height: 14px;
+	color: #ccc;
+	display: block;
+}
+#header .mid-header {
+    padding: 20px 0;
+}
+#header .mid-header .left-section ul{
+	overflow: hidden;
+}
+#header .mid-header .left-section ul li{
+	display: inline-block;
+	float: left;
+	margin: auto 3px;
+}
+#header .mid-header .left-section .header-nav{
+	margin: 10px 0;
+}
+#header .mid-header .left-section ul li:first-child{
+	margin-left: 0;
+}
+#header .mid-header .left-section ul li a{
+	border-left: 1px solid #666;
+	display: block;
+	vertical-align: middle;
+	color: #777777;
+	padding-left: 4px;
+	font-size: 13px;
+	line-height: 14px;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+}
+#header .mid-header .left-section ul li:first-child a{
+	border-left: none;
+}
+#header .mid-header .left-section ul li a:hover{
+    color: #c31624;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+}
+#header .mid-header .left-section .search-form{
+  padding: 10px 0;
+}
+#header .mid-header .left-section .search-field{
+	float:left;
+	border-radius: 0;
+	font-size: 0.9em;
+	height: 29px;
+	padding: 6px 12px;
+	background-color: #ccc;
+	border: 0px;
+	width: 200px;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+}
+#header .mid-header .left-section .search-field:focus{
+	width: 250px;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+}
+
+

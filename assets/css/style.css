@@ -73,7 +73,9 @@ body {
 /* -------------------------------------------------
  H E A D E R
 ----------------------------------------------------*/
-
+#header {
+    background: #f6f6f6;
+}
 #header .top-bar{
 	background-color: #c3161c;
 	border-bottom: 1px solid #d24f54;
@@ -160,4 +162,63 @@ body {
 	-moz-transition: all .5s;
 }
 
-
+#header .bottom-header #main-nav {
+	background: #124e44;
+	position: relative;
+}
+#header .bottom-header #main-nav > ul {
+	display: block;
+	width: 85%;
+	margin: auto;
+}
+#header .bottom-header #main-nav > ul > li {
+	display: inline-block;
+	text-align: center;
+	position: static;
+}
+#header .bottom-header #main-nav > ul > li > a{
+	display: block;
+	text-align: right;
+	padding: 10px 18px;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+	color:white;
+}
+#header .bottom-header #main-nav > ul > li:hover > a{
+	background: #186457;
+}
+#header .bottom-header #main-nav > ul > li:hover .sub-menu-wrapper  {
+	display: block;
+}
+#header .bottom-header #main-nav > ul > li .sub-menu-wrapper {
+	background: #e6e6e6;
+	position: absolute;
+	border-top: 7px solid #186457 !important;
+	width: 100%;
+	right: 0;
+	padding: 10px 25px;
+	display: none;
+	border-radius: 0 0 5px 5px;
+}
+#header .bottom-header #main-nav > ul > li .sub-menu-wrapper .sub-menu {
+	background: #ccc;
+	padding: 12px 0;
+}
+#header .bottom-header #main-nav > ul > li .sub-menu-wrapper .sub-menu ul li {
+	text-align: right;
+	
+}
+#header .bottom-header #main-nav > ul > li .sub-menu-wrapper .sub-menu ul li a {
+	color: black;
+	display: block;
+		line-height: 25px;
+	border-top: 1px solid black;
+	padding-right: 5px;
+}
+#header .bottom-header #main-nav > ul > li .sub-menu-wrapper .sub-menu ul li:hover a{
+  background: #F4F4F4;
+  text-decoration: none;
+	color: #c3161c;
+}

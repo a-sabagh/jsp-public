@@ -5,11 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/css/reset.css" >
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+<link rel="stylesheet" href="assets/css/slick.css" >
+<link rel="stylesheet" href="assets/css/ticker-style.css" >
 <link rel="stylesheet" href="assets/css/style.css" >
 <title>صفحه اصلی | آموزش جی اس پی</title>
 </head>
 
-<body>
+<body class="home">
 
 <header id="header">
 	<div class="top-bar">
@@ -24,29 +26,32 @@
 			</nav><!--.top-bar-nav-->
 		</div><!--.container-->
 	</div><!--.top-bar-->
-	<div class="container" >
-		<div class="row mid-header">
-			<div class="right-section col-md-6">
-				<img class="logo" src="images/logo.png" >
-			</div><!--.right-section-->
-			<div class="left-section col-md-6">
-				<nav class="header-nav">
-					<ul>
-						<li><a href="#" title="">پایگاه خبری</a></li>
-						<li><a href="#" title="">نهاد نمایندگی رهبری</a></li>
-						<li><a href="#" title="">اعضای هیأت علمی</a></li>
-						<li><a href="#" title="">خدمات برخط</a></li>
-						<li><a href="#" title="">مرکز فناوری اطلاعات</a></li>
-						<li><a href="#" title="">کتابخانه</a></li>
-					</ul>
-				</nav><!--.header-nav-->
-				<form action="" method="GET" class="search-form">
-					<input type="text" name="s" class="search-field" placeholder="جستجو">
-				</form><!--.search-form-->
-			</div><!--.left-section-->
-		</div><!--.header-container-->
+	<div class=" mid-header" >
+		<div class="container">
+			<div class="row">
+				<div class="right-section col-md-6">
+					<img class="logo img-responsive" src="images/logo.png" >
+				</div><!--.right-section-->
+				<div class="left-section col-md-6">
+					<nav class="header-nav">
+						<ul>
+							<li><a href="#" title="">پایگاه خبری</a></li>
+							<li><a href="#" title="">نهاد نمایندگی رهبری</a></li>
+							<li><a href="#" title="">اعضای هیأت علمی</a></li>
+							<li><a href="#" title="">خدمات برخط</a></li>
+							<li><a href="#" title="">مرکز فناوری اطلاعات</a></li>
+							<li><a href="#" title="">کتابخانه</a></li>
+						</ul>
+					</nav><!--.header-nav-->
+					<form action="" method="GET" class="search-form">
+						<input type="text" name="s" class="search-field" placeholder="جستجو">
+					</form><!--.search-form-->
+				</div><!--.left-section-->
+			</div><!--.row-->
+		</div><!--.container-->
 	</div><!--.mid-header-->
 	<div class="bottom-header">
+	<div class="bottom-header-filter"></div>
 		<div class="container">
 			<nav id="main-nav">
 				<ul>
@@ -93,20 +98,147 @@
 					<li><a href="#" title="">دانشکده‌ها </a></li>
 				</ul>
 			</nav><!--#main-nav-->
-			<div class="slider"></div><!--.slider-->
+			<div class="slider-wrapper">
+				<div class="slick-slider">
+					<div class="slider-item">
+						<div class="slider-img"><img class="img-responsive" src="images/slide1.jpg" alt="" ></div>
+						<div class="slider-caption">
+							<h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
+							<a href="#" class="slider-btn" title="">ادامه مطلب</a>
+						</div>
+					</div><!--.slick-item-->
+					<div class="slider-item">
+						<div class="slider-img"><img class="img-responsive" src="images/slide2.jpg" alt="" ></div>
+						<div class="slider-caption">
+							<h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
+							<a href="#" class="slider-btn" title="">ادامه مطلب</a>
+						</div>
+					</div><!--.slick-item-->
+					<div class="slider-item">
+						<div class="slider-img"><img class="img-responsive" src="images/slide3.jpg" alt="" ></div>
+						<div class="slider-caption">
+							<h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
+							<a href="#" class="slider-btn" title="">ادامه مطلب</a>
+						</div>
+					</div><!--.slick-item-->
+				</div><!--.slick-slider-->
+			</div><!--.slider-wrapper-->
 		</div><!--.container-->
 	</div><!--.bottom-header-->
 	<div class="news-wrapper">
-		<div class="news"></div><!--.news-->
+		<div class="container">
+			<div class="news">
+				<ul id="js-news" class="js-hidden">
+					<li class="news-item"><a href="#">فراخوان ثبت نام و ارائه درخواست استخدام تربیت معلم</a></li>
+					<li class="news-item"><a href="#">ارائه روشی برای اندازه‌گیری مقادیر بسیار کم دارو در نمونه‌های بیولوژیکی</a></li>
+					<li class="news-item"><a href="#">دیدار رییس دانشگاه با وزیر آموزش عالی سوریه</a></li>
+					<li class="news-item"><a href="#">سی و یکمین گردهمایی مدیران گروه های آموزشی برگزار شد</a></li>
+				</ul>
+			</div><!--.news-->
+		</div><!--.container-->
 	</div><!--.news-wrapper-->
 </header><!--#header-->
 <main id="main-content">
-
+	<section class="home-widg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 widg-wrapper">
+					<div class="widg">
+						<div class="widg-title"><h3>دستاورد ها</h3></div>
+						<div class="widg-content">
+							<ul>
+								<li><a href="#" title="">معاون جدید آموزشی دانشگاه منصوب شد</a></li>
+								<li><a href="#" title="">رشته های علوم پایه پزشكی، بهداشت و تخصصی سال 98-97 منطقه آمایشی ده</a></li>
+								<li><a href="#" title="">اطلاعیه اتوماسیون فرایندهای آموزشی دانشگاه در سامانه گلستان(پیشخوان خدمت)</a></li>
+								<li><a href="#" title="">انتصاب مدیر مسئول ماهنامه "مهندسی مکانیک"</a></li>
+								<li><a href="#" title="">مدیران گروه های آموزشی بین المللی سازی دانشگاه را در اولویت قرار دهند</a></li>
+								<li><a href="#" title="">نتایج رتبه‌بندی دانشگاه‌ها و موسسات پژوهشی کشور منتشر شد</a></li>
+							</ul>
+						</div><!--.widg-content-->
+					</div><!--.widg-->
+				</div><!--.col-md-4-->
+				<div class="col-md-4 widg-wrapper">
+					<div class="widg">
+						<div class="widg-title"><h3>اخبار دانشگاه</h3></div>
+						<div class="widg-content">
+							<ul>
+								<li><a href="#" title="">دستاوردهای طرح تحول راهبردی در نشست مدیران گروه های آموزشی تشریح شد</a></li>
+								<li><a href="#" title="">نتایج رتبه‌بندی دانشگاه‌ها و موسسات پژوهشی کشور منتشر شد</a></li>
+								<li><a href="#" title="">درخشش دو دانشجوی دانشگاه در پنجمین جشنواره بین المللی غدیر</a></li>
+								<li><a href="#" title="">دانشگاه تربیت مدرس در فهرست موسسات علمی برتر جهان</a></li>
+								<li><a href="#" title="">طراحی نرم افزار تشخیص هوشیاری و مدیریت استرس از سوی محققان دانشگاه</a></li>
+							</ul>
+						</div><!--.widg-content-->
+					</div><!--.widg-->
+				</div><!--.col-md-4-->
+				<div class="col-md-3 widg-wrapper">
+					<div class="widg">
+						<div class="widg-content event-wrapper">
+							<ul>
+								<li>
+									<a class="event-item" href="#" title="">
+										<img class="img-responsive" src="images/event1.jpg" alt="" >
+										<span class="event-info">
+											<span class="event-info-title">همایش ها و نشست ها</span>
+										</span>
+									</a><!--."event-item-->
+								</li>
+								<li>
+									<a class="event-item" href="#" title="">
+										<img class="img-responsive" src="images/event2.jpg" alt="" >
+										<span class="event-info">
+											<span class="event-info-title">رویداد ها</span>
+										</span>
+									</a><!--."event-item-->
+								</li>
+							</ul>
+						</div><!--.widg-content-->
+					</div><!--.widg-->
+				</div><!--.col-md-4-->
+			</div><!--.row-->
+		</div><!--.container-->
+	</section><!--.home-widg-->
+	<section class="news-thumb">
+		<div class="container">
+			<div class="news-thumb-wrapper">
+				<div class="news-heading"><h3>مراسم و رویداد ها</h3></div><!--.news-heading-->
+				<div class="news-content">
+					<div class="slick-multi-slider">
+						<div class="slick-item">
+							<a href="#" title="" >
+								<img class="img-responsive" src="images/news-thumb/1.jpg" alt="" >
+								<p>اره از پادپخش خبری معاونت فرهنگی و اجتماعی</p>
+							</a>
+						</div>
+						<div class="slick-item">
+							<a href="#" title="" >
+								<img class="img-responsive" src="images/news-thumb/2.jpg" alt="" >
+								<p> ساخت باغ شیشه‌ای (تراریوم) در دانشگاه برگزار می شود</p>
+							</a>
+						</div>
+						<div class="slick-item">
+							<a href="#" title="" >
+								<img class="img-responsive" src="images/news-thumb/2.jpg" alt="" >
+								<p>شماره از پادپخش خبری معاونت فرهنگی و اجتماعی</p>
+							</a>
+						</div>
+						<div class="slick-item">
+							<a href="#" title="" >
+								<img class="img-responsive" src="images/news-thumb/2.jpg" alt="" >
+								<p>ثبت نام هشتمین دوره ضیافت اندیشه استادان</p>
+							</a>
+						</div>
+					</div>
+				</div><!--.news-content-->
+			</div><!--.news-wrapper-->
+		</div><!--.container-->
+	</section><!--.news-thumb-->
 </main><!--#main-content-->
 <footer id="footer-widg"></footer><!--#footer-widg-->
 
-
 <script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/jquery.ticker.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 

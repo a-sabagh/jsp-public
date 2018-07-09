@@ -57,8 +57,6 @@ p {
 p a, p a:visited {
     outline:none;
     text-decoration:none;
-    color:#000;
-    background-color:#FFFFFF;
 }
 button {
   overflow: visible;

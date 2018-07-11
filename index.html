@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="assets/css/slick.css" >
 <link rel="stylesheet" href="assets/css/ticker-style.css" >
 <link rel="stylesheet" href="assets/css/style.css" >
+<link rel="stylesheet" href="assets/css/responsive.css" >
 <title>صفحه اصلی | آموزش جی اس پی</title>
 </head>
 
@@ -29,10 +30,10 @@
 	<div class=" mid-header" >
 		<div class="container">
 			<div class="row">
-				<div class="right-section col-md-6">
+				<div class="right-section col-md-5">
 					<img class="logo img-responsive" src="images/logo.png" >
 				</div><!--.right-section-->
-				<div class="left-section col-md-6">
+				<div class="left-section col-md-7">
 					<nav class="header-nav">
 						<ul>
 							<li><a href="#" title="">پایگاه خبری</a></li>
@@ -53,51 +54,54 @@
 	<div class="bottom-header">
 	<div class="bottom-header-filter"></div>
 		<div class="container">
-			<nav id="main-nav">
-				<ul>
-					<li>
-						<a href="#" title="">درباره دانشگاه</a>
-						<div class="sub-menu-wrapper">
-							<div class="row sub-menu">
-								<div class="col-md-3">
-									<ul>
-										<li><a href="#" title="" >دانشگاه در یک نگاه</a></li>
-										<li><a href="#" title="" >گزارش سالیانه</a></li>
-										<li><a href="#" title="" >تاریخچه</a></li>
-									</ul>
-								</div><!--.col-md-3-->
-								<div class="col-md-3">
-									<ul>
-										<li><a href="#" title="" >یک نگاه</a></li>
-										<li><a href="#" title="" >گزارش سالیانه</a></li>
-										<li><a href="#" title="" >تاریخچه</a></li>
-									</ul>
-								</div><!--.col-md-3-->
-								<div class="col-md-3">
-									<ul>
-										<li><a href="#" title="" >دانشگاه در یک نگاه</a></li>
-										<li><a href="#" title="" >گزارش</a></li>
-										<li><a href="#" title="" >تاریخچه</a></li>
-									</ul>
-								</div><!--.col-md-3-->
-								<div class="col-md-3">
-									<ul>
-										<li><a href="#" title="" >دانشگاه در یک نگاه</a></li>
-										<li><a href="#" title="" >گزارش سالیانه</a></li>
-										<li><a href="#" title="" >تاریخچه</a></li>
-									</ul>
-								</div><!--.col-md-3-->
+			<div class="navigation-wrapper">
+				<nav id="main-nav">
+					<a class="mobile-toggle" href="#" title="منو"></a>
+					<ul>
+						<li class="has-child">
+							<a href="#" title="">درباره دانشگاه</a>
+							<div class="sub-menu-wrapper">
+								<div class="row sub-menu">
+									<div class="col-md-3">
+										<ul>
+											<li><a href="#" title="" >دانشگاه در یک نگاه</a></li>
+											<li><a href="#" title="" >گزارش سالیانه</a></li>
+											<li><a href="#" title="" >تاریخچه</a></li>
+										</ul>
+									</div><!--.col-md-3-->
+									<div class="col-md-3">
+										<ul>
+											<li><a href="#" title="" >یک نگاه</a></li>
+											<li><a href="#" title="" >گزارش سالیانه</a></li>
+											<li><a href="#" title="" >تاریخچه</a></li>
+										</ul>
+									</div><!--.col-md-3-->
+									<div class="col-md-3">
+										<ul>
+											<li><a href="#" title="" >دانشگاه در یک نگاه</a></li>
+											<li><a href="#" title="" >گزارش</a></li>
+											<li><a href="#" title="" >تاریخچه</a></li>
+										</ul>
+									</div><!--.col-md-3-->
+									<div class="col-md-3">
+										<ul>
+											<li><a href="#" title="" >دانشگاه در یک نگاه</a></li>
+											<li><a href="#" title="" >گزارش سالیانه</a></li>
+											<li><a href="#" title="" >تاریخچه</a></li>
+										</ul>
+									</div><!--.col-md-3-->
+								</div>
 							</div>
-						</div>
-					</li>
-					<li><a href="#" title="">آموزش</a></li>
-					<li><a href="#" title="">پژوهش</a></li>
-					<li><a href="#" title="">دانشجویی</a></li>
-					<li><a href="#" title="">فرهنگی</a></li>
-					<li><a href="#" title="">منابع انسانی</a></li>
-					<li><a href="#" title="">دانشکده‌ها </a></li>
-				</ul>
-			</nav><!--#main-nav-->
+						</li>
+						<li><a href="#" title="">آموزش</a></li>
+						<li><a href="#" title="">پژوهش</a></li>
+						<li><a href="#" title="">دانشجویی</a></li>
+						<li><a href="#" title="">فرهنگی</a></li>
+						<li><a href="#" title="">منابع انسانی</a></li>
+						<li><a href="#" title="">دانشکده‌ها </a></li>
+					</ul>
+				</nav><!--#main-nav-->
+			</div><!--.navigation-wrapper-->
 			<div class="slider-wrapper">
 				<div class="slick-slider">
 					<div class="slider-item">
@@ -234,7 +238,44 @@
 		</div><!--.container-->
 	</section><!--.news-thumb-->
 </main><!--#main-content-->
-<footer id="footer-widg"></footer><!--#footer-widg-->
+<footer id="footer-widg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<ul class="footer-widg">
+					<li><a href="#" title="" >پردیس دانشگاهی</a></li>
+					<li><a href="#" title="" >اعضای هیأت علمی</a></li>
+					<li><a href="#" title="" >انجمن دانش‌آموختگان</a></li>
+					<li><a href="#" title="" >دانشجویان</a></li>
+					<li><a href="#" title="" >انتشارات دانشگاه</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul class="footer-widg">
+					<li><a href="#" title="" >واحدهای پژوهشی</a></li>
+					<li><a href="#" title="" >دانشجویان</a></li>
+					<li><a href="#" title="" >انتشارات دانشگاه</a></li>
+					<li><a href="#" title="" >کتابخانه مرکزی</a></li>
+					<li><a href="#" title="" >مرکز بهداشت و درمان</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul class="footer-widg">
+					<li><a href="#" title="" >پردیس دانشگاهی</a></li>
+					<li><a href="#" title="" >اعضای هیأت علمی</a></li>
+					<li><a href="#" title="" >انجمن دانش‌آموختگان</a></li>
+					<li><a href="#" title="" >دانشجویان</a></li>
+					<li><a href="#" title="" >انتشارات دانشگاه</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<b>نشانی : </b>
+				<p>تهران جلال آل احمد پل نصر</p>
+				<b>شبکه های اجتماعی :</b>
+			</div>
+		</div><!--.row-->
+	</div><!--.container-->
+</footer><!--#footer-widg-->
 
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/slick.js"></script>

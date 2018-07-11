@@ -136,9 +136,6 @@ body {
 	-webkit-transition: all .2s;
 	-moz-transition: all .2s;
 }
-#header .mid-header .left-section ul li:first-child a{
-	border-left: none;
-}
 #header .mid-header .left-section ul li a:hover{
     color: #c31624;
 	transition: all .2s;
@@ -182,10 +179,20 @@ body {
     opacity: 0.6;
     z-index: 9;
 }
+#header .navigation-wrapper {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  padding: 0 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 #header .bottom-header #main-nav {
+	width: 100%;
 	background: #124e44;
 	position: relative;
-	top: -40px;
+	text-align: center;
 }
 #header .bottom-header #main-nav > ul {
 	display: block;
@@ -209,9 +216,6 @@ body {
 }
 #header .bottom-header #main-nav > ul > li:hover > a{
 	background: #186457;
-}
-#header .bottom-header #main-nav > ul > li:hover .sub-menu-wrapper  {
-	display: block;
 }
 #header .bottom-header #main-nav > ul > li .sub-menu-wrapper {
 	background: #e6e6e6;
@@ -246,7 +250,7 @@ body {
 }
 #header .bottom-header .slider-wrapper {
     position: relative;
-    top: -40px;
+    /*! top: -40px; */
 	z-index: 99;
 }
 #header .bottom-header .slider-wrapper .slider-img img {
@@ -331,7 +335,6 @@ body {
   display: block;
   position: relative;
   background: #124e44;
-  top: -40px;
   z-index: 99;
 }
 #header .news {
@@ -344,8 +347,7 @@ body {
 #main-content {
   background: #e6e6e6;
   position: relative;
-  top: -40px;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 .widg-title h3 {
   position: relative;
@@ -509,4 +511,31 @@ transform: scale(1.1, 1.1);
 }
 .slick-multi-slider .slick-slide p{
   padding: 0 10px;
+}
+footer {
+  background: none repeat scroll 0 0 #666666;
+  border-top: 0px solid #0e0e0e;
+  clear: both;
+  font-size: 0.9em;
+  padding: 40px 0;
+  position: relative;
+  /*! top: -40px; */
+}
+.footer-widg li a {
+  color: white;
+  line-height: 33px;
+  font-size: 14px;
+  display: block;
+  font-weight: lighter;
+}
+#footer-widg {
+  color: white;
+}
+
+.bottom-header .container {
+  position: relative;
+}
+
+#footer-widg p {
+    line-height: 45px !important;
 }
